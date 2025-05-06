@@ -8,35 +8,90 @@
 
   <!-- Internal CSS -->
   <style>
-    p {
-      background-color: #c2b280;
-      padding: 10px;
-      font-size: 30px;
-      border-radius: 10px; /* Rounded corners */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fefcf8;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #2f4f2f; /* Dark forest green */
+      font-size: 36px;
+      text-align: center;
+    }
+
+    .box {
+      margin: 15px 0;
+      padding: 20px;
+      font-size: 20px;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .dashed-border {
+      border: 4px dashed #7B3F00; /* Chocolate */
+      background-color: #4B2E1A;   /* Saddle Brown */
+    }
+
+    .solid-border {
+      border: 4px solid #321414; /* Seal Brown */
+      background-color: #5C3A21; /* Walnut Brown */
+    }
+
+    .double-border {
+      border: 6px double #2F1B0C; /* Dark Chocolate */
+      background-color: #3B2F2F;  /* Ebony */
+    }
+
+    .dotted-border {
+      border: 4px dotted #A9746E; /* Cocoa Brown */
+      background-color: #954535; /* Chestnut */
+    }
+
+    .groove-border {
+      border: 6px groove #635147; /* Umber */
+      background-color: #C19A6B;  /* Camel */
+      color: black;
+    }
+
+    .ridge-border {
+      border: 6px ridge #D2B48C; /* Tan */
+      background-color: #B87333; /* Copper */
+      color: black;
+    }
+
+    .inset-border {
+      border: 6px inset #C2B280; /* Sand */
+      background-color: #EDC9AF; /* Desert Sand */
+      color: black;
+    }
+
+    .outset-border {
+      border: 6px outset #C2B280; /* Sand */
+      background-color: #FOE68C;  /* Khaki */
+      color: black;
+    }
+
+    .hidden-border {
+      border: 6px hidden #E5D8C5; /* light beige */
+      background-color: #F5F5DC; /* Beige */
+      color: black;
     }
   </style>
 </head>
 <body>
 
-  <h1 style="color: hsl(120, 100%, 30%);">CSS - Borders</h1>
+  <h1>CSS - Borders</h1>
 
-  <p> <b>This is paragraph no 01 with brown background.</b></p>
-
-  <div class="box dashed-border">
-    p {
-    border-style: dotted;
-    border-color: #2f1b0c
-    }
-    This box has a dashed border.
-  </div>
-
-  <div class="box solid-border">
-    This box has a solid border.
-  </div>
-
-  <div class="box double-border">
-    This box has a double border.
-  </div>
+  <div class="box dashed-border">This box has a <b>dashed border</b>.</div>
+  <div class="box solid-border">This box has a <b>solid border</b>.</div>
+  <div class="box double-border">This box has a <b>double border</b>.</div>
+  <div class="box dotted-border">This box has a <b>dotted border</b>.</div>
+  <div class="box groove-border">This box has a <b>groove border</b>.</div>
+  <div class="box ridge-border">This box has a <b>ridge border</b>.</div>
+  <div class="box inset-border">This box has an <b>inset border</b>.</div>
+  <div class="box outset-border">This box has an <b>outset border</b>.</div>
+  <div class="box hidden-border">This box has a <b>hidden border</b> (may not be visible).</div>
 
 </body>
 </html>
